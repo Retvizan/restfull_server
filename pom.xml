@@ -85,7 +85,7 @@
               <manifest>
                 <addClasspath>true</addClasspath>
                 <classpathPrefix>lib/</classpathPrefix>
-                <mainClass>org.example.RestServiceApplication</mainClass>
+                <mainClass>by.retvizan.RestServiceApplication</mainClass>
               </manifest>
             </archive>
           </configuration>
