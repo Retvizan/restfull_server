@@ -9,8 +9,9 @@ import java.io.IOException;
 @RestController
 public class CertificateController {
     @GetMapping("/import")
-    public void importCert(@RequestParam(value = "id", defaultValue = " ") String id) {
+    public String importCert(@RequestParam(value = "id", defaultValue = " ") String id) {
         CertificateLogin.processCert("import", id);
+        return String.format("Certificate of user %s has been loaded", id);
     }
 
 }
